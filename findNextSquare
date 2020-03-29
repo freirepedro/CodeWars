@@ -1,0 +1,17 @@
+def find_next_square(sq):
+    if sq != int((sq**0.5))**2:
+        return -1
+    else:
+        aux = int(sq**0.5)
+        aux = aux + 1
+        return aux**2
+
+
+a = find_next_square(16)
+print(a)
+a = find_next_square(11)
+print(a)
+a = find_next_square(121)
+print(a)
+a = find_next_square(123)
+print(a)
