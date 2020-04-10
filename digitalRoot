@@ -1,0 +1,12 @@
+def digitalRoot(n):
+    output, aux = 0, 0
+    while n > 0:
+        aux = n % 10
+        n = int(n / 10)
+        output = output + aux
+    aux = 0
+    while output % 10 is not output:
+        aux = output % 10
+        output = int(output / 10)
+        output = output + aux
+    return output
