@@ -1,0 +1,12 @@
+def getCount(input):
+    input = input.lower()
+    num_vowels = 0
+    auxL = len(input)
+    #print(auxL)
+    aux = 0
+    while aux < auxL:
+        if input[aux] == 'a' or input[aux] == 'e' or input[aux] == 'i' or input[aux] == 'o' or input[aux] == 'u':
+            num_vowels = num_vowels + 1
+        aux = aux + 1
+
+    return num_vowels
