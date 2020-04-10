@@ -1,0 +1,13 @@
+def filter_list(l):
+    aux = 0
+    auxL = l.__len__()
+    lista = []
+    while auxL > aux:
+        if type(l[aux]) is int:
+            if l[aux] >= 0:
+                lista.append(l[aux])
+            aux = aux + 1
+        else:
+            aux = aux + 1
+
+    return lista
